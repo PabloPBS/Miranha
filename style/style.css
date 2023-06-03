@@ -20,6 +20,17 @@ body {
 
 header {
     border-bottom: 2px solid rgb(54, 0, 0);
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+}
+
+#fixo {
+    height: 10%;
+}
+
+.anchor {
+    scroll-margin: 65px;
 }
 
 nav {
