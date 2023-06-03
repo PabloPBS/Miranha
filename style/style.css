@@ -102,3 +102,8 @@ p.texto {
     height: 75vh;
     margin-bottom: 20px;
 }
+
+#filmes {
+    background: black url("../images/aranhaverso.png") no-repeat center center;
+    background-size: contain;
+}
