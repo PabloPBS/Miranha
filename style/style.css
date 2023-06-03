@@ -87,7 +87,7 @@ p.texto {
 }
 
 .p-destaque {
-    color: rgba(255, 0, 0, 0.5);
+    color: rgba(255, 0, 0, 0.7);
 }
 
 #hero {
@@ -140,12 +140,67 @@ p.texto {
     padding: 20px;
 }
 
+.card-filmes:hover {
+    transition: transform .3s ease-in-out;
+    transform: scale(1.1);
+}
+
 .card-filmes > img {
     border-radius: 1%;
     width: 25vh;
 }
 
 #aranhaverso {
-    background: red url(../images/aranhaverso.png) contain no-repeat center center;
+    background: black url(../images/aranhaverso.png) no-repeat center center;
+    background-size: contain;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+#aranhaverso > #aranhaverso-sobre {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#aranhaverso > img#aranhaverso-principal {
+    height: 50vh;
+    border-radius: 20px;
+} 
+
+#miles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+#miles > #miles-sobre {
+    width: 40%;
+}
+
+#miles > img {
+    width: 35vw;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
