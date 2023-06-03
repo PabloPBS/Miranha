@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     width: 100%;
@@ -61,7 +65,7 @@ main > h1 {
 }
 
 main > h2 {
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     margin-left: 70px;
 }
@@ -82,7 +86,7 @@ p.texto {
     width: 50vw;
 }
 
-#sobre > p > .p-filmes {
+.p-destaque {
     color: rgba(255, 0, 0, 0.5);
 }
 
@@ -104,6 +108,44 @@ p.texto {
 }
 
 #filmes {
-    background: black url("../images/aranhaverso.png") no-repeat center center;
+    background: black url("../images/logo-spider.jpg") no-repeat center center;
     background-size: contain;
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+#filmes > h3 {
+    padding: 20px 5px;
+}
+
+#filmes > #tobey {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+#filmes > #andrew {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 20px;
+}
+
+#filmes > #holland {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 20px;
+}
+
+.card-filmes > img {
+    border-radius: 1%;
+    width: 25vh;
+}
+
+#aranhaverso {
+    background: red url(../images/aranhaverso.png) contain no-repeat center center;
+    color: white;
 }
