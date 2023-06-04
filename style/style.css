@@ -215,3 +215,59 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    #home {
+        flex-direction: column;
+    }
+
+    #home > #sobre {
+        width: 80vw;
+    }
+
+    #home > #triplice {
+        width: 80vw;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    #hero > #hero-sobre {
+        width: 80vw;
+    }
+
+    #hero > #miranha {
+        height: 80vw;
+    }
+
+    .card-filmes > img {
+        width: 20vw;
+    }
+
+    #aranhaverso {
+        flex-direction: column;
+    }
+
+    #aranhaverso > #aranhaverso-sobre {
+        width: 80vw;
+    }
+
+    #aranhaverso > img#aranhaverso-principal {
+        border-radius: 0;
+        height: 50vw;
+    }
+
+    #miles {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    #miles > #miles-sobre {
+        width: 80vw;
+    }
+
+    #miles > img {
+        width: 80vw;
+    }
+}
