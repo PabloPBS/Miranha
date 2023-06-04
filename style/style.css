@@ -19,6 +19,20 @@ body {
     word-spacing: -2px;
 }
 
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track  {
+    background: rgb(58, 58, 58);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+}
+
 header {
     border-bottom: 2px solid rgb(54, 0, 0);
     position: fixed;
