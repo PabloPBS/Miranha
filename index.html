@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon_io/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <title>Homem-Aranha</title>
 </head>
 <body>
@@ -14,11 +15,13 @@
             <img id="logo" src="images/marvel-logo.png" alt="logo-marvel">
 
             <ul id="menu">
-                <li><a href="#top">Home</a></li>
-                <li><a href="#menu-sobre">Sobre</a></li>
-                <li><a href="#top-filmes">Filmes</a></li>
-                <li><a href="#topverso">Aranhaverso</a></li>
+                <li><a class="botao-menu" href="#top">Home</a></li>
+                <li><a class="botao-menu" href="#menu-sobre">Sobre</a></li>
+                <li><a class="botao-menu" href="#top-filmes">Filmes</a></li>
+                <li><a class="botao-menu" href="#topverso">Aranhaverso</a></li>
+                <button id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
             </ul>
+            <button id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
         </nav>
     </header>
     <div id="fixo"></div>
@@ -94,5 +97,7 @@
     <footer>
         <p>Desenvolvido por <a href="https://github.com/PabloPBS" rel="external" target="_blank">Pablo Barbosa Silva</a>, fã do personagem.</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

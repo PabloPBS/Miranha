@@ -16,6 +16,7 @@ body {
     width: 100%;
     font-family: 'DM Sans', sans-serif;
     background-color: rgb(0, 0, 0);
+    word-spacing: -2px;
 }
 
 header {
@@ -39,6 +40,18 @@ nav {
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
     color: white;
+}
+
+#abrir-menu, #fechar-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+#abrir-menu:hover, #fechar-menu:hover {
+    color: rgba(255, 0, 0, 0.9);
 }
 
 nav > #logo {
@@ -148,7 +161,7 @@ p.texto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .card-filmes:hover {
@@ -222,11 +235,11 @@ footer a:hover {
     }
 
     #home > #sobre {
-        width: 80vw;
+        width: 90vw;
     }
 
     #home > #triplice {
-        width: 80vw;
+        width: 90vw;
     }
 
     #hero {
@@ -234,15 +247,15 @@ footer a:hover {
     }
 
     #hero > #hero-sobre {
-        width: 80vw;
+        width: 90vw;
     }
 
     #hero > #miranha {
-        height: 80vw;
+        height: 90vw;
     }
 
     .card-filmes > img {
-        width: 20vw;
+        width: 23vw;
     }
 
     #aranhaverso {
@@ -250,12 +263,12 @@ footer a:hover {
     }
 
     #aranhaverso > #aranhaverso-sobre {
-        width: 80vw;
+        width: 90vw;
     }
 
     #aranhaverso > img#aranhaverso-principal {
         border-radius: 0;
-        height: 50vw;
+        height: 60vw;
     }
 
     #miles {
@@ -264,10 +277,42 @@ footer a:hover {
     }
 
     #miles > #miles-sobre {
-        width: 80vw;
+        width: 90vw;
     }
 
     #miles > img {
-        width: 80vw;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        transition: top 1s ease;
+        position: fixed;
+        backdrop-filter: blur(5px);
+    }
+
+    #fechar-menu {
+        display: block;
+    }
+
+    #abrir-menu {
+        display: block;
+    }
+
+    main > h1 {
+        margin-left: 20px;
+    }
+
+    main > h2 {
+        margin-left: 30px;
     }
 }
